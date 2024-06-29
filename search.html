@@ -1,0 +1,278 @@
+<!doctype html
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Quick search with the innovatehub </title>
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+ header {
+            background-color: teal;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+    text-decoration: underline;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+section {
+    padding: 50px;
+    margin: 20px 0;
+}
+.search-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #ecf0f1;
+        }
+        .search-section form {
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+        }
+        #search-query {
+            width: 70%;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+button {
+            padding: 15px 20px;
+            border: none;
+            background-color: 0071bc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+footer {
+            background-color: #2196f3;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+ .results-section {
+            padding: 40px;
+            background-color: white;
+            margin: 100px auto;
+            max-width: 800px;
+            box-shadow: 0 0 1000px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        .results-section p {
+            margin: 10px 0;
+            color: #34495e;
+        }
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+  </style>
+
+<script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body>
+<div class="header">
+        <a href="index.html" class="logo"><img src="images/logo-white.png"></a>
+        <div class="header-right">
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+    
+          <a> | </a>
+    
+          <a href="faqs.html">FAQs</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="404.html">404</a>
+          <a> | </a>
+    
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+    
+          <a> | </a>
+    
+          <a class="active" href="search.html"> <i style="margin-right: 1%;"
+            class="fa-solid fa-search justify-content-end fa-xl"></i>
+          </a>
+    
+          <a> | </a>
+    
+          <a href="cart.html"> <i style="margin-right: 1%;"
+            class="fa-solid fa-cart-shopping justify-content-end fa-xl"></i>
+          </a>
+          
+        </div>
+      </div>
+
+<main>
+  <section class="search-section">
+     <form id="search-form">
+      <input type="text" id="search-query" placeholder="search for ideas, funding, or users.... e.g. david">
+       <button type="submit">search</button>
+  </form>
+        </section>
+        
+        <section class="results-section" id="results-section">
+            <!-- Search results will be displayed here -->
+        </section>
+       </main>
+    
+       <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Email: <a href="mailto: innovatehub.ug@gmail.com"> innovatehub.ug@gmail.com</a></li>
+                    <li>Phone: +256 701 123-345</li>
+                    <li>Address: Wandegeya, Makerere, Kampala, Uganda</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 InnovateHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = document.getElementById('search-query').value;
+            search(query);
+        });
+
+        function search(query) {
+            // For demonstration, we'll use a static array of results
+            const results = [
+                'Project 1: Innovation with Tech',
+                'Project 2:Next Generation Solution For Building Analysis and Design',
+                'Project 3: Vertical Development Visavee land utilisation ',
+                'Project 4: Auto-mobile Engineering',
+                   'Ideas : Adoption to midas nGen software with auto-generation Design output',
+                   'Ideas : Emerging AI for Good',
+                   'Ideas : Green Building Materials',
+                     'User: David KK Mugume - Researcher',
+                     'User: Keine Elizabeth Kiiza - Investor',
+                     'User: Evans Aine - Researcher',
+                     'User: Eddie  - Funder',
+                     'User: Martinel - Funder',
+                     'User: George Kicc - Investor',
+                     'User: Martha MT - Researcher',
+                     'User: Darlene Najj - Researcher',
+                     'User: Jovia Nacks - Startup',
+                     'User: Williamz kyajja - Investor',
+                     'User: Nellie Kusm - Startup',
+                     'User: Vicentel - Funder',
+                     'User: Gracious Tenywl- Startup'
+
+                 
+                 ];
+
+            const filteredResults = results.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+            displayResults(filteredResults);
+        }
+function displayResults(results) {
+            const resultsSection = document.getElementById('results-section');
+            resultsSection.innerHTML = ''; // Clear previous results
+
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const p = document.createElement('p');
+                    p.textContent = result;
+                    resultsSection.appendChild(p);
+                });
+            } else {
+                resultsSection.innerHTML = '<p>No results matched</p>';
+            }
+        }
+</script>
+
+
+</body>
+</html>

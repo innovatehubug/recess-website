@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateHub Registration</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(214, 221, 221);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: teal;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid teal;
+            border-radius: 5px;
+        }
+
+        .gender-label {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        .gender-input {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register for InnovateHub</h2>
+        <form action="/register" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label>Gender:</label>
+            <label class="gender-label"><input type="radio" class="gender-input" name="gender" value="male" required> Male</label>
+            <label class="gender-label"><input type="radio" class="gender-input" name="gender" value="female" required> Female</label>
+            <label class="gender-label"><input type="radio" class="gender-input" name="gender" value="other" required> Other</label>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="district">Home District:</label>
+            <select id="district" name="district" required>
+                <option value="">Select your home district</option>
+                <option value="Kampala">Kampala</option>
+                <option value="Gulu">Gulu</option>
+                <option value="Mbarara">Mbarara</option>
+                <option value="Arua">Arua</option>
+                <option value="Jinja">Jinja</option>
+                <option value="Fort Portal">Fort Portal</option>
+                <option value="Mbale">Mbale</option>
+                <option value="Busia">Busia</option>
+                <option value="Tororo">Tororo</option>
+                <option value="Soroti">Soroti</option>
+                <option value="Kumi">Kumi</option>
+                <option value="Hoima">Hoima</option>
+                <option value="Wakiso">Wakiso</option>
+                <option value="Siroko">Siroko</option>
+                <option value="Namayingo">Namayingo</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>

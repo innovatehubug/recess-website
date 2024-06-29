@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+        
+}
+.main {
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+.greetings, .benefits {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(7, 178, 246) ;
+}
+.greetings {
+    flex: 1;
+    margin-right: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/home/backgroundimage.png') no-repeat center center;
+
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center; 
+        
+}
+.benefits {
+    flex: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/home/backgroundimage.png') no-repeat center center;
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        
+        
+}
+.underline {
+    text-decoration: underline;
+}
+.footer {
+    background-color:rgb(7, 178, 246);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color:grey;
+}
